@@ -282,7 +282,11 @@
           <!--Work and DC-->
           <div class="col-md-5">
             <label for="TypeOfWork" class="form-label">Type of work</label>
-            <select class="form-select" aria-label="Default select example">
+            <select
+              class="form-select"
+              id="TypeOfWork"
+              aria-label="Default select example"
+            >
               <option selected>Select the type of work</option>
               <option value="1">Accountant</option>
               <option value="2">Actor</option>
@@ -330,16 +334,18 @@
       <div class="container-fluid">
         <div class="row">
           <div
-            class="col-12 bg-dark d-flex flex-column  text-white"
+            class="col-12 bg-dark d-flex flex-column align-items-center text-white"
           >
-            <p class="align-self-center">LOCATION</p>
-            <div class="text-center align-self-center">
+            <div><p>LOCATION</p></div>
+            <div>
               <p><small> John Daniel Drive</small></p>
               <p><small>Clark, MO 65243</small></p>
             </div>
-            <p class="align-self-center">
-              <small>Copyright &copy;Your WebSite 2021</small>
-            </p>
+            <div>
+              <p>
+                <small>Copyright &copy;Your WebSite 2021</small>
+              </p>
+            </div>
           </div>
         </div>
       </div>
