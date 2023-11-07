@@ -228,8 +228,9 @@
 
       <!--FORM-->
       <!--last and first name-->
-      <div class="container">
-        <form class="row g-3">
+      <div class="container-fluid bg-info">
+        <h1 class="text-center"><strong>WANT AN OFFER</strong></h1>
+        <form class="row g-3 ">
           <div class="col-md-6">
             <label for="Firstname" class="form-label">First name</label>
             <input
@@ -277,7 +278,8 @@
           <!--Work and DC-->
           <div class="col-md-6">
             <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity" /> <!----CNANGE!!!-->
+            <input type="text" class="form-control" id="inputCity" />
+            <!----CNANGE!!!-->
           </div>
 
           <div class="col-md-6">
@@ -286,19 +288,17 @@
           </div>
 
           <div class="col-md-12">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip" />
+            <label for="MessageForm" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              placeholder="Specify your work commission..."
+              id="MessageForm"
+              rows="3"
+            ></textarea>
           </div>
+
           <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck" />
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
-            </div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-warning">Send</button>
           </div>
         </form>
       </div>
