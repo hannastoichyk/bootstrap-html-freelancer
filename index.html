@@ -230,103 +230,94 @@
         </div>
       </div>
 
-      <!--FORM-->
       <!--last and first name-->
       <div class="container-fluid bg-info mt-5">
         <h1 class="text-center"><strong>WANT AN OFFER?</strong></h1>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-5">
-            <label for="Firstname" class="form-label">First name</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter your first name..."
-              aria-label="First name"
-              id="Firstname"
-            />
-          </div>
-          <div class="col-md-5">
-            <label for="LastName" class="form-label">Last name</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter your last name..."
-              aria-label="First name"
-              id="LastName"
-            />
-          </div>
-          <!--email and hour requisted-->
-          <div class="col-md-5">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              placeholder="name@example.com"
-              aria-label="Email"
-              id="inputEmail4"
-            />
-          </div>
+        <!--FORM-->
+        <form id="form_input_request" onsubmit="offer(event)">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-5">
+              <label for="Firstname" class="form-label">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your first name..."
+                aria-label="First name"
+                id="firstname"
+              />
+            </div>
+            <div class="col-md-5">
+              <label for="LastName" class="form-label">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your last name..."
+                aria-label="First name"
+                id="lastname"
+              />
+            </div>
+            <!--email and hour requisted-->
+            <div class="col-md-5">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="name@example.com"
+                aria-label="Email"
+                id="email"
+              />
+            </div>
 
-          <div class="col-md-5">
-            <label for="HoursRequisted" class="form-label"
-              >Hours requisted</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="HoursRequisted"
-              placeholder="Hours Requisted..."
-            />
-          </div>
+            <div class="col-md-5">
+              <label for="HoursRequisted" class="form-label"
+                >Hours requisted</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="HoursRequisted"
+                placeholder="Hours Requisted..."
+              />
+            </div>
 
-          <!--Work and DC-->
-          <div class="col-md-5">
-            <label for="TypeOfWork" class="form-label">Type of work</label>
-            <select
-              class="form-select"
-              id="TypeOfWork"
-              aria-label="Default select example"
-            >
-              <option selected>Select the type of work</option>
-              <option value="1">Accountant</option>
-              <option value="2">Actor</option>
-              <option value="3">Architect</option>
-              <option value="4">Astronomer</option>
-              <option value="5">Baker</option>
-              <option value="6">Bricklayer</option>
-              <option value="7">Bus driver</option>
-              <option value="8">Butcher</option>
-              <option value="9">Carpenter</option>
-              <option value="10">Chef/Cook</option>
-              <option value="11">Cleaner</option>
-              <option value="12">Dentist</option>
-              <option value="13">Designer</option>
-              <option value="14">Doctor</option>
-              <option value="15">Electrician</option>
-            </select>
-          </div>
+            <!--Work and DC-->
 
-          <div class="col-md-5">
-            <label for="DiscountCode" class="form-label">Discount Code</label>
-            <input type="text" class="form-control" id="DiscountCode" />
-          </div>
+            <div class="col-md-5">
+              <label for="TypeOfWork" class="form-label">Type of work</label>
+              <select
+                class="form-select"
+                id="TypeOfWork"
+                aria-label="Default select example"
+              >
+                <option selected>Select the type of work</option>
+                <option value="1">Sviluppo backend</option>
+                <option value="2">Sviluppo frontend</option>
+                <option value="3">Analisi progettuale di un progetto</option>
+              </select>
+            </div>
 
-          <div class="col-md-10">
-            <label for="MessageForm" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              placeholder="Specify your work commission..."
-              id="MessageForm"
-              rows="3"
-            ></textarea>
-          </div>
+            <div class="col-md-5">
+              <label for="DiscountCode" class="form-label">Discount Code</label>
+              <input type="text" class="form-control" id="DiscountCode" />
+            </div>
 
-          <div class="col-md-10 mt-2">
-            <div class="d-flex justify-content-center pb-3">
-              <button type="submit" class="btn btn-warning">Send</button>
+            <div class="col-md-10">
+              <label for="MessageForm" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                placeholder="Specify your work commission..."
+                id="MessageForm"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <div class="col-md-10 mt-2">
+              <div class="d-flex justify-content-center pb-3">
+                <button type="submit" class="btn btn-warning">Send</button>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </main>
     <!--footer-->
